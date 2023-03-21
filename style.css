@@ -64,8 +64,9 @@
 /* PRODUCTOS*/
 
 .productos{
-    height: 400px;
+    height: 500px;
 }
+
 
 #producto1{
     background-image: url(./IMAGENES/Productos/Producto1.png);
@@ -77,6 +78,18 @@
     background-position: center;
     background-size: cover;   
 }
+#producto3{
+    background-image: url(./IMAGENES/Productos/Producto3.png);
+    background-position: center;
+    background-size: cover;   
+}
+#maicena{
+    background-image: url(./IMAGENES/Productos/Producto4b.png);
+    background-position: center;
+    background-size: cover;   
+}
+
+
 
 .descripcion_producto{
     display: flex;
@@ -109,6 +122,9 @@
     border-bottom: rgba(244, 165, 113, 0.68) ;
 }
 
+.maicena{
+    background-color:rgba(244, 165, 113, 0.68);
+}
 
 @media screen and (max-width: 768px){
 
@@ -150,15 +166,7 @@ footer{
     padding: 20px;
 }
 
-/* #result{
-    background-color: rgb(180, 228, 243);
-    height: 200px;
-    width: 35%;
-    align-items: center;
-    padding: 10px;
-    text-align: center;
-    align-items: center;
-} */
+
 #total{
     font-size: large;
     color: black;
