@@ -11,62 +11,54 @@
 </head>
 <body>
 
-        
 
     <!-- PRINCIPAL-->
-    <div id="pagina">    
         
-        <div id="carouselExampleCaptions" class="carousel slide compra_ticket" data-bs-ride="false">
-            
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div id="principal" class="carousel">
+    <div id="principal" class="carousel">
                         
-                        <nav class="navbar navbar-expand-md ">
+        <nav class="navbar navbar-expand-md ">
                             
-                            <button class="navbar-toggler btn btn-light " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+            <button class="navbar-toggler btn btn-light " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
 
-                            <div class="px-2 "><a class="nav-link text-white" href="#"><img src="./IMAGENES/Logo/LogoMenu60x48.png" alt="HUMAYA"></a></div>
                             
-                            <div class="navbar-toggler text-white">HUMAYA</div>
                             
-                            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="navbar-toggler text-white">HUMAYA</div>
+
+            <div class="px-2 "><a class="nav-link text-white" href="#"><img src="./IMAGENES/Logo/LogoMenu60x48.png" alt="HUMAYA"></a></div>
+                            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                                 
-                                <ul class="navbar-nav mt-2 ">
-                                    <li  class=" nav-item p-auto m-auto">
+                    <ul class="navbar-nav mt-2 ">
+                        <li  class=" nav-item p-auto m-auto">
                                         <a class="nav-link active text-white" href="#">
                                             <p class="uno m-auto">Quienes somos?</p></a>
-                                    </li>
-                                    <li class="nav-item p-auto m-auto ">
+                        </li>
+                        <li class="nav-item p-auto m-auto ">
                                         <a class="nav-link text-white" href="#"><p class="uno m-auto">Productos</p></a>
-                                    </li>
+                        </li>
                                     
-                                    <li class="nav-item p-auto m-auto">
+                        <li class="nav-item p-auto m-auto">
                                         <a  class="nav-link text-white" href="#"><p class="uno m-auto">Locales</p></a>
-                                    </li>
-                                    <li class="nav-item p-auto m-auto">
+                        </li>
+                        <li class="nav-item p-auto m-auto">
                                         <a class="nav-link text-white boton_comprar" id="compra" href="#"><p class="uno m-auto">Contacto</p></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        
-                    </nav>
-                        <div class="carousel-caption  d-md-block d-none position-absolute top-50 start-50 p-0 text-end">
-                            <h2>DULCES DEL ALMA</h2>
-                            <p class="text-end">Los productos HUMAYA son elaborados desde hace más de 50 años fiel a las tradiciones familiares y sabores caseros, acompañándote en los momentos más importantes de la vida.  </p>
-                            <button class="btn but-bg text-white text-bg-none border p-2">CONOCENOS</button>
-                            
-
-                        </div>
-                    </div>
-                </div>
-            
-            
+                        </li>
+                    </ul>
             </div>
-            
+                        
+        </nav>
+
+        <div id="textoPrincipal" class="d-md-block d-none">
+            <h2 >DULCES DEL ALMA</h2>
+            <p>Los productos HUMAYA son elaborados desde hace más de 50 años fiel a las tradiciones familiares y sabores caseros, acompañándote en los momentos más importantes de la vida.  </p>
+            <button class="btn but-bg text-white text-bg-none border p-2">CONOCENOS</button>
         </div>
+    </div>
+                
+            
+    
         
         
     <!-- TEXTO CENTRAL -->
@@ -77,42 +69,48 @@
     
         
         <!-- PRODUCTOS  -->
-        <section class="row g-0 p-0 compra_ticket">
-            
-            <div class="col-md-6 productos">
-
+        <section>
+            <div class="row g-0 p-0 productos">
+                <div class="col-md-6 img_producto" id="producto1">
+                </div>
+                
+                <div class="col-md-6 bg-black p-auto descripcion_producto">
+                    <h2 class="titulo_producto">DULCE DE LECHE TRADICIONAL</h2>
+                    <p class="producto_descripcion">Elaboración artesanal de principio a fin con un sabor intenso, receta tradicional.</p>
+                    <h5 class="presentacion_producto">Presentación en frasco de vidrio de 580gr.</h5>
+                    <button class="btn btn-outline border but-bg text-white info_boton" type="button">+ INFO</button>
+                </div>
             </div>
-            
-            <div class="col-md-6 bg-black p-auto p_descripcion">
-                <h2>DULCE DE LECHE TRADICIONAL</h2>
-                <p>Elaboración artesanal de principio a fin con un sabor intenso, receta tradicional.</p>
-                <h5>Presentación en frasco de vidrio de 580gr.</h5>
-                <button class="btn btn-outline border but-bg text-white" type="button">+ INFO</button>
 
+            <div class="row g-0 p-0 productos">
+                
+                <div class="col-md-6 bg-black p-auto descripcion_producto">
+                    <h2 class="titulo_producto">DULCE DE LECHE SIN AZÚCAR</h2>
+                    <p class="producto_descripcion">Elaboración artesanal para cuidar tu silueta sin renunciar a nada, endulzado naturalmente con stevia.</p>
+                    <h5 class="presentacion_producto">Presentación en frasco de vidrio de 580gr y 280gr.</h5>
+                    <button class="btn btn-outline border but-bg text-white info_boton" type="button">+ INFO</button>
+                </div>
+                <div class="col-md-6 img_producto" id="producto2">
+                </div>
+            </div>
 
+            <div class="row g-0 p-0 productos">
+                <div class="col-md-6 img_producto" id="producto1">
+                </div>
+                
+                <div class="col-md-6 bg-black p-auto descripcion_producto">
+                    <h2 class="titulo_producto">DULCE DE LECHE TRADICIONAL</h2>
+                    <p class="producto_descripcion">Elaboración artesanal de principio a fin con un sabor intenso, receta tradicional.</p>
+                    <h5 class="presentacion_producto">Presentación en frasco de vidrio de 580gr.</h5>
+                    <button class="btn btn-outline border but-bg text-white info_boton" type="button">+ INFO</button>
+                </div>
             </div>
 
 
         
         </section>
 
-        <section class="row g-0 p-0 productos">
-            
-            <div class="col-md-6 bg-black p-auto p_descripcion">
-                <h2>DULCE DE LECHE TRADICIONAL</h2>
-                <p>Elaboración artesanal de principio a fin con un sabor intenso, receta tradicional.</p>
-                <h5>Presentación en frasco de vidrio de 580gr.</h5>
-                <button class="btn btn-outline border but-bg text-white" type="button">+ INFO</button>
-
-
-            </div>
-
-            <div class="col-md-6 productos">
-
-            </div>
-
         
-        </section>
 
         <!-- TEXTO CENTRAL  -->
 
@@ -222,7 +220,7 @@
                 <a href="/index.html"><button id="volver_atras" type="submit" class="btn btn-outline-secondary">Volver atrás</button></a>
             </div>
         </form>
-    </div>
+    
 
     <!-- FOOTER -->
 
