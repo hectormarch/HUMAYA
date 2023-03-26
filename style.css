@@ -1,13 +1,10 @@
 /* NAVBAR */
-.compratick{
-    display: none;
-}
-
 
 
 .uno:hover{
-    color: rgb(39, 43, 39);
+    color: rgb(16, 18, 16);
     font-size: large;
+    
 }
 
 #textoPrincipal{
@@ -28,14 +25,20 @@
     height: 500px;
 
 }
+.texto{
+    color: rgba(244, 165, 113, 0.68);
+    
+}
 .carousel{
-    background-position: center;
+    background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 500px;
+    
 }
 
 #principal {
-    background-image:url("./IMAGENES/Central/imagenCentral.png"); 
+    background-image: linear-gradient(rgba(107, 25, 25, 0.5), rgba(42, 17, 17, 0.5)), url("./IMAGENES/Central/imagenCentral.png");
 }
 
 .but-bg{
@@ -102,8 +105,6 @@
 .titulo_producto{
     color: rgba(244, 165, 113, 0.68);
     text-align: center;
-    
-    
 }
 .producto_descripcion{
     
@@ -137,11 +138,30 @@
     
 }
 
+
+/*CALIDAD*/
+
+#organico{
+    height: 150px;
+    width: 220px;
+    background-image: url("./IMAGENES/Organicos/organico.png");
+    background-position: center;
+    background-size: cover; 
+}
+
 /* FORMULARIO */
 
 form{
     margin: auto;
-    width:50%
+    width:50%;
+    background-color: antiquewhite;
+    
+}
+form h5{
+    color: rgba(90, 58, 36, 0.68);
+}
+.form-group{
+    color: rgba(90, 58, 36, 0.68);;
 }
 form div input:first-of-type{
     margin-right: 3px;
@@ -153,21 +173,75 @@ form div input:last-of-type{
 form button{
     width: 100%;
 }
+.form-control{
+    background-color: rgba(90, 58, 36, 0.68);
+}
+
+#btn-enviar{
+    border-color: rgba(90, 58, 36, 0.68);
+    color: rgba(90, 58, 36, 0.68);
+
+}
+#btn-enviar:hover{
+    background-color: rgba(90, 58, 36, 0.68);
+    color: aliceblue;
+}
+#producto_contacto{
+    background-image: url(./IMAGENES/Productos/Producto3.png);
+    background-position: center;
+    background-size: cover;   
+}
+
+/* RECETAS */
+
+.card{
+    background-color: antiquewhite;
+}
+.btn-receta{
+    border-color: rgba(90, 58, 36, 0.68);
+    color: rgba(90, 58, 36, 0.68);
+
+}
+.btn-receta:hover{
+    background-color: rgba(90, 58, 36, 0.68);
+}
 
 /* FOOTER */
 
 footer{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    background-color: #16213E;
+    justify-content: center;
+    text-align: center;
+    background-color: #010511;
     color: white;
     height: auto;
     padding: 20px;
 }
-
-
-#total{
-    font-size: large;
-    color: black;
+footer ul{
+    display: inline-flex;
+    justify-content: space-between;
 }
+footer ul h5:hover{
+    color: aliceblue;
+
+}
+footer ul li:hover{
+    color: rgba(245, 108, 17, 0.68);
+}
+
+.titulo_productoF{
+    color: rgba(247, 101, 4, 0.68);
+    text-align: center;
+}
+
+.bi-facebook{
+    color: rgb(213, 221, 230);
+}
+
+iframe{
+    background-color: #010511;
+    width: 100%;
+}
+

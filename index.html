@@ -7,9 +7,12 @@
     <title>Oonf Bs As</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
 
 </head>
-<body>
+<body class="g-0">
 
 
     <!-- PRINCIPAL-->
@@ -24,7 +27,7 @@
 
                             
                             
-            <div class="navbar-toggler text-white">HUMAYA</div>
+            <div class="navbar-toggler"><h2 class="texto">HUMAYA</h2></div>
 
             <div class="px-2 "><a class="nav-link text-white" href="#"><img src="./IMAGENES/Logo/LogoMenu60x48.png" alt="HUMAYA"></a></div>
                             
@@ -62,13 +65,13 @@
         
         
     <!-- TEXTO CENTRAL -->
-        <div class="compra_ticket" id="texto_central">
+        <div  id="texto_central">
             <h2>PRODUCTOS</h2>
         </div>
         
     
         
-        <!-- PRODUCTOS  -->
+    <!-- PRODUCTOS  -->
         <section>
             <div class="row g-0 p-0 productos">
                 <div class="col-md-6 img_producto" id="producto1">
@@ -124,69 +127,150 @@
 
         
 
-        <!-- TEXTO CENTRAL  -->
+    <!-- CALIDAD  -->
 
-        <div class="descripcion_producto bg-black" >
+        <div class="descripcion_producto bg-black p-4" >
             <h4 class="text-white">La mejor calidad para vos</h4>
-            <div id="organico"></div>
+            <div class="p-4 img-fluid">
+                <img src="./IMAGENES/Organicos/organico.png" alt="" class="img-fluid px-4">
+                <img src="./IMAGENES/Organicos/organico.png" alt="" class="img-fluid px-4">
+                <img src="./IMAGENES/Organicos/organico.png" alt="" class="img-fluid px-4">
+            </div>
             <h3 class="text-white">Contáctanos</h3>
         </div>
 
     
-        <!-- FORMULARIO -->
-
-
-        <div class="container my-4" id="datos">
-            <form class="row g-0 text-center m-auto ">
-                <div class="col-md-6">
-                    <input type="name" class="form-control" id="inputname" placeholder="Nombre" required>
+    <!-- FORMULARIO -->
+        <div class="row">
+            <div class="col-md-6 img_producto" id="producto_contacto"></div>
+            <form class="col-md-6 p-4">
+                <h5>Dejános tu consulta y nuestro personal se pondrá en contacto a la brevedad:</h5>
+                <div class="form-group">
+                    <label for="name" class="form-label py-2">NOMBRE:</label>
+                    <input type="name" class="form-control" id="exampleFormControlInput1">
+                    
                 </div>
-                <div class="col-md-6">
-                    <input type="name" class="form-control" id="inputApellido" placeholder="Apellido" required>
-                </div>
-                <div class="col-12">
-                    <input type="email" class="form-control" id="inputemail" placeholder="Correo" required>
-                </div>
-                <div class="col-md-6 text-start">
-                    <label for="inputcantidad" class="form-label">Cantidad</label>
-                    <input type="number" class="form-control" id="cantidad" placeholder="cantidad" required>
-                </div>
-                <div class="col-md-6 text-start">
-                    <label for="inputState" class="form-label">Categoria</label>
-                    <select id="inputState" class="form-select" required>
-                        <option selected value="1">Estudiante</option>
-                        <option value="2">Traine</option>
-                        <option value="3">Junior</option>
-                    </select>
-                </div>
-                <div class="col-md-6">
-                    <button type="submit" id="resumen_button" class="btn btn-success my-2">Resumen</button>
-                </div>
-                <div class="col-md-6">
-                    <button type="reset" class="btn btn-success my-2">Borrar</button>
+                <div class="form-group">
+                <label class="py-2" for="exampleFormControlInput1">E-MAIL:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
                 </div>
                 
+                <div class="form-group">
+                <label class="py-2" for="exampleFormControlTextarea1">CONSULTA:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" id="btn-enviar" class="btn my-4">Enviar</button>
             </form>
         </div>
-    </div>
+    
 
+    <!-- RECETAS  -->
+    
+    <div class="row g-0 d-flex bg-dark justify-content-center"> 
+
+        <h3 class="text-white text-center py-2 my-2">Recetas</h3>
+
+        <div class="col-4 card m-4 px-4" style="width: 18rem;">
+            <img src="./IMAGENES/Organicos/organico.png" class="card-img-top" alt="SteveJobs">
+            
+            <div class="card-body px-2">
+                <h5 class="text-center card-title">CONITOS</h5>
+                <p class="card-text text-ceter">Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+            </div>
+            <div class="d-flex m-2">
+                <button class=" btn btn-receta  m-auto" type="button">Preparación</button>
+                
+            </div>
+            
+        </div>
+
+
+        <div class="col-4 card m-4 px-4" style="width: 18rem;">
+            <img src="./IMAGENES/Organicos/organico.png" class="card-img-top" alt="SteveJobs">
+            <div class="card-body px-2">
+                <h5 class="text-center card-title">PEPAS</h5>
+                <p class="card-text text-ceter">Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+            </div>
+            <div class="d-flex m-2">
+                <button class=" btn btn-receta  m-auto" type="button">Preparación</button>
+                
+            </div>
+            
+            
+        </div>
+
+
+        <div class="col-4 card m-4 view overlay px-4 zoom" style="width: 18rem;">
+            <img src="./IMAGENES/Organicos/organico.png" class="card-img-top" alt="SteveJobs">
+            <div class="card-body px-2">
+                <h5 class="text-center card-title">TORTA NUTT</h5>
+                <p class="card-text text-ceter">Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+            </div>
+            <div class="d-flex m-2">
+                <button class=" btn btn-receta  m-auto" type="button">Preparación</button>
+                
+            </div>
+            
+            
+        </div>
+        <h3 class="text-white text-center py-2 my-2">Encontranos en:</h3>
+    </div>
     
     
 
     <!-- FOOTER -->
+        
+        
+        <footer class="row">
+                
+                <ul class="nav container g-0 p-auto m-auto">
 
-        <footer>
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><p class="uno">Preguntas frecuentes</p></a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><p class="uno">Contáctanos</p></a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><p class="uno">Prensa</p></a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><p class="uno">Conferencias</p></a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><p class="uno">Términos y condiciones</p></a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><p class="uno">Privacidad</p></a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><p class="uno">Estudiantes</p></a></li>
-            </ul>
+                    <li class="nav-item col-6 col-md-4 align-self-center"><img src="./IMAGENES/Logo/LogoHumaya100x100.png" alt="" ></li>
+
+                    <li class="list-unstyled col-6 col-md-2"><a href="#" class="nav-link text-white">
+                        
+                        <ul class="list-group bg">
+                            <h5 class="titulo_productoF">MENÚ</h5>
+                            <li class="list-unstyled ">Home</li>
+                            <li class="list-unstyled ">Productos</li>
+                            <li class="list-unstyled " >Locales</li>
+                            <li class="list-unstyled ">Contactos</li>
+                        </ul>
+            
+                    </a></li>
+
+                    <li class="list-unstyled col-6 col-md-2 "><a href="#" class="nav-link px-2 text-white">
+                        <ul class="list-group bg">
+                            <h5 class="titulo_productoF">NAVEGACIÓN</h5>
+                            <li class="list-unstyled">Preguntas frecuentes</li>
+                            <li class="list-unstyled">Distribuidores</li>
+                            <li class="list-unstyled">Prensa</li>
+                            <li class="list-unstyled">Recetas exclusivas</li>
+                        </ul>
+                    </a></li>
+
+                    <li class="REDES col-6 col-md-2">
+                        <ul class="list-group bg">
+                            <h5 class="titulo_productoF">REDES</h5>
+                            <li class="list-unstyled "><i class="bi bi-instagram"></i></li>
+                            <li class="list-unstyled "><i class="bi bi-facebook"></i></li>
+                            <li class="list-unstyled "><i class="bi bi-tiktok"></i></li>
+                            <li class="list-unstyled "><i class="bi bi-twitter"></i></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item col-12 col-md-2 ">
+                        <ul class="list-group align-self-center">
+                            <h5 class="titulo_productoF text-center">UBICACIÓN</h5>
+                            <li class="list-group-item"><iframe src="https://goo.gl/maps/oeQF4Npm1JJc3wy59" allow="autoplay" frameborder=""></iframe></li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
 
         </footer>
+        
 
 
     
